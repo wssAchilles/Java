@@ -1,22 +1,17 @@
 package daily;
 
+import javax.swing.*;
+
 public class GradeClassifier {
     public static void main(String[] args) {
-        java.io.Console console = System.console();
-        System.out.print("请输入学生成绩（0-100）：");
-        String input = console.readLine();
-            int score = Integer.parseInt(input);
-            if (score >= 90 && score <= 100) {
-                System.out.println("成绩等级：A");
-            } else if (score >= 80) {
-                System.out.println("成绩等级：B");
-            } else if (score >= 70) {
-                System.out.println("成绩等级：C");
-            } else if (score >= 60) {
-                System.out.println("成绩等级：D");
-            } else if (score >= 0) {
-                System.out.println("成绩等级：E");
-            }
+        String input = JOptionPane.showInputDialog(null, "请输入内容:", "输入框", JOptionPane.PLAIN_MESSAGE);
+
+        // 如果用户点击“取消”或关闭窗口，input 为 null
+        if (input != null) {
+            JOptionPane.showMessageDialog(null, "你输入的是: " + input);
+        } else {
+            JOptionPane.showMessageDialog(null, "输入取消");
+        }
     }
 }
 
