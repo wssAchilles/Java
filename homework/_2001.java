@@ -1,5 +1,6 @@
 package homework;
 import java.util.Scanner;
+//编写程序，输入10个整数，按从小到大的顺序输出。
 public class _2001 {
     public static void main(String[] args) {
         int []a=new int[10];

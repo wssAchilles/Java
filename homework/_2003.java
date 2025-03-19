@@ -1,5 +1,5 @@
 package homework;
-
+//编写程序，比较字符串的比较方法
 public class _2003 {
     public static void main(String[] args) {
         String a="abc";

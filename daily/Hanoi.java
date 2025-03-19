@@ -14,16 +14,13 @@ public class Hanoi {
             hanoi(n - 1, C, A, B);
         }
     }
-
     private static void move(char x, char y) {
-        System.out.println("▓ 移动盘子" +x+ "到" +y );
+        System.out.println("移动盘子" +x+ "到" +y );
     }
-
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Please input the number:");
         int number=input.nextInt();
-        System.out.println("The process of moving plates:5");
         hanoi(number,'A','B','C');
     }
 }
