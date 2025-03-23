@@ -43,7 +43,7 @@ public class ex2_1 {
         System.out.print("请输入第一个虚数：");
         Complex c1=new Complex(input.nextDouble(),input.nextDouble());
         System.out.print("请输入第二个虚数：");
-        Complex c2=new Complex(input.nextDouble(),input.nextDouble());
+        Complex c2=new Complex(input.nextDouble(), input.nextDouble());
         Complex add=c1.add(c2);
         Complex sub=c1.sub(c2);
         Complex mul=c1.mul(c2);
