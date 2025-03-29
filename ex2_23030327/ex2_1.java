@@ -1,7 +1,6 @@
 package ex2_23030327;
-
 import java.util.Scanner;
-
+//定义一个复数类，包含实部和虚部，实现复数的加减乘除运算
 class Complex{
     private  double real;
     private  double imag;
@@ -14,7 +13,15 @@ class Complex{
         this.imag=0;
     }
     public void show(){
-        System.out.println(real+"+"+imag+"i");
+        if(real>0&&imag>0){System.out.println(real+"+"+imag+"i");}
+        else if(real>0&&imag<0){System.out.println(real+""+imag+"i");}
+        else if(real<0&&imag>0){System.out.println(real+"+"+imag+"i");}
+        else if(real<0&&imag<0){System.out.println(real+""+imag+"i");}
+        else if(real==0&&imag>0){System.out.println(imag+"i");}
+        else if(real==0&&imag<0){System.out.println(imag+"i");}
+        else if(real>0&&imag==0){System.out.println(real);}
+        else if(real<0&&imag==0){System.out.println(real);}
+        else if(real==0&&imag==0){System.out.println(0);}
     }
     public Complex add(Complex other){
         double newreal=this.real+other.real;

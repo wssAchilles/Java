@@ -21,6 +21,9 @@ public class test1 {
         System.out.println(b);
         char c2='G';
         System.out.println(c2);
+        String name="xzq";
+        int age=18;
+        System.out.println(name+age);
     }
 }
 
