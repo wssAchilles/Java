@@ -8,10 +8,7 @@ class Complex{
         this.real=real;
         this.imag=imag;
     }
-    public Complex(){
-        this.real=0;
-        this.imag=0;
-    }
+    public Complex(){}
     public void show(){
         if(real>0&&imag>0){System.out.println(real+"+"+imag+"i");}
         else if(real>0&&imag<0){System.out.println(real+""+imag+"i");}

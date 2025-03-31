@@ -6,24 +6,24 @@ public class _static {
     static int a = 10;
     static int b = 20;
     public static void main(String[] args) {
+        Person1 c=new Person1();
+        Person1 d=new Person1();
+        Person1.show();
         System.out.println(a);
         System.out.println(b);
-        System.out.println(_static.a);
-        System.out.println(_static.b);
-        new Person().show();
     }
 }
-class Person{
+class Person1{
     static {
-        System.out.println("静态代码块");
+        System.out.println("静态代码块");//只调用一次
     }
     {
         System.out.println("构造代码块");
     }
-    public void show(){
+    static public void show(){
+        System.out.println("show");
         {
             System.out.println("局部代码块");
         }
-        System.out.println("show");
     }
 }
