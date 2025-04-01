@@ -3,6 +3,8 @@ package daily;
 import java.util.Random;
 import java.util.Scanner;
 
+import static java.util.Arrays.sort;
+
 public class 数组练习 {
     public static void main(String[] args) {
         //静态舒适化数组
@@ -19,8 +21,9 @@ public class 数组练习 {
         for(int i=0;i<a.length;i++){
             a[i]=new Random().nextInt(100);
         }
-        for(int i=0;i<a.length;i++){
-            System.out.println(a[i]);
+        sort(a);
+        for(int i:a){
+            System.out.println(i);
         }
     }
 }

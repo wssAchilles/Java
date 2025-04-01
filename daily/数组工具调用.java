@@ -2,7 +2,7 @@ package daily;
 import java.util.Arrays;
 import static java.util.Arrays.copyOf;
 import static java.util.Arrays.sort;
-
+//sort()排序，copyOf()复制，toString()展示
 public class 数组工具调用 {
     public static void main(String[] args) {
         int []a={34,57,12,89,64};

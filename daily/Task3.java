@@ -18,7 +18,7 @@ public class Task3 {
         // 通过带参构造函数实例化PingPangPlayer对象ppp
         // 输出'name---age'
         // 分别调用sleep()、eat()、study()、speak()方法
-        /********* begin *********/
+        /****** begin *********/
         PingPangPlayer ppp = new PingPangPlayer(pppName, pppAge);
         System.out.println(ppp.name + "---" + ppp.age);
         ppp.sleep();

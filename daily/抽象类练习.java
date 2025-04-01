@@ -9,7 +9,7 @@ public class 抽象类练习 {
         //抽象类可以有private属性
         //抽象类可以有protected方法
         //抽象类可以有protected属性
-        Animal2 a=new Dog2(10);
+        Animal2 a=new Dog2();
         System.out.println(a.name);
         System.out.println(Animal2.age);
         a.play();
@@ -25,12 +25,12 @@ abstract class Animal2 {
     public void play() {
         System.out.println("玩耍");
     }
-    public abstract void eat();
+    abstract public void eat();
 }
 class Dog2 extends Animal2 {
-    public Dog2(int xzq) {
+    public Dog2() {
         this.name = "dog";
-        System.out.println(name);
+        System.out.println(super.name);
     }
     public void eat() {
         System.out.println("吃狗粮");
@@ -38,4 +38,7 @@ class Dog2 extends Animal2 {
     public void play() {
         System.out.println("玩球");
     }
+//    public void lookHome() {
+//        System.out.println("看家");
+//    }
 }
