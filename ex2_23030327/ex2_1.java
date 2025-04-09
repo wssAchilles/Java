@@ -1,6 +1,7 @@
 package ex2_23030327;
 import java.util.Scanner;
 //定义一个复数类，包含实部和虚部，实现复数的加减乘除运算
+//2303027许子祺
 class Complex{
     private  double real;
     private  double imag;
@@ -31,7 +32,7 @@ class Complex{
         return new Complex(newreal,newimag);
     }
     public Complex mul(Complex other){
-        double newreal=this.real*other.real-this.real*other.real;
+        double newreal=this.real*other.real-this.imag*other.imag;
         double newimag=this.imag*other.imag+this.imag*other.imag;
         return new Complex(newreal,newimag);
     }

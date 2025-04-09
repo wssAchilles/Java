@@ -1,4 +1,6 @@
 package ex2_23030327;
+//定义一个抽象类 Shape，在其中声明计算面积 Area()和周长 Perimeter()方法
+//23030327许子祺
 import java.text.DecimalFormat;
 import static java.lang.Math.PI;
 abstract class Shape{
