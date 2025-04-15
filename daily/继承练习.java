@@ -24,7 +24,7 @@ class animal {
     }
 }
 class dog extends animal{
-    public dog(){
+    public dog() {
         this.name = "dog";
         System.out.println(name);
     }
