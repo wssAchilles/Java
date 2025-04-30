@@ -34,5 +34,15 @@ public class Object {
         for(String str:strs){
             System.out.print(str+" ");
         }
+        //拼接字符串并计算时间
+        System.out.println();
+        long start=System.currentTimeMillis();
+        String str="abcdefghijklmn";
+        String res="";
+        for(int i=0;i<100000;i++){
+            res+=str;
+        }
+        long end=System.currentTimeMillis();
+        System.out.println(end-start);//拼接字符串的时间
     }
 }
