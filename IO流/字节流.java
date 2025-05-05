@@ -1,7 +1,7 @@
 package IO流;
 
 import java.io.*;
-
+//InputStream抽象类是字节流读取的父类
 public class 字节流 {
     public static void main(String[] args) throws IOException {
         method();//FileInputStream字节流读取
