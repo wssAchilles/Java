@@ -35,7 +35,8 @@ public class 字符流写出 {
 
         //2.开始写出
         //BufferedWriter的write方法是重写的，效率更高
-        out.write("牛逼");
+        char[] arr = {'魏', '铄', '苏'};//写出一个字符数组
+        out.write(arr, 0, 3);//写出一个字符数组，返回int类型(魏铄苏)119
 
         //3.释放资源
         out.close();
