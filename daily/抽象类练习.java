@@ -13,6 +13,8 @@ public class 抽象类练习 {
         System.out.println(a.name);
         System.out.println(Animal2.age);
         a.play();
+        System.out.println(a);
+        //System.out.println(a.toString());//返回getClass().getName() + '@' + Integer.toHexString(hashCode())
     }
 }
 abstract class Animal2 {
