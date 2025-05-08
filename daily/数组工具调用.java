@@ -9,8 +9,8 @@ public class 数组工具调用 {
         //排序
         sort(a);
         //以前的方法
-        for(int i=0;i<a.length;i++){
-            System.out.println(a[i]);
+        for (int j : a) {
+            System.out.println(j);
         }
         //现在的方法
         System.out.println(Arrays.toString(a));

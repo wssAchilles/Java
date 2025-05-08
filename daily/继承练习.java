@@ -9,6 +9,7 @@ public class 继承练习 {
         d.lookHome();
         System.out.println(d.name);
         System.out.println(d.age);
+        System.out.println(d);
     }
 }
 class animal {
