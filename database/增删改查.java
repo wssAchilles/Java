@@ -104,9 +104,9 @@ public class 增删改查 {
         }
     }
     public static void main(String[] args) {
-        //Insert();
-        Delete();
-        //Update();
+        Insert();
+        //Delete();
+        Update();
         Select();
     }
 }
