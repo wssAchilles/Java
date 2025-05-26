@@ -10,7 +10,7 @@ public class javafx extends Application {
     @Override
     public void start(Stage primaryStage) {
         Button btn = new Button("Say 'Hello JavaFX'");
-        btn.setOnAction(e -> System.out.println("Hello, JavaFX!"));
+        btn.setOnAction(e-> System.out.println("Hello, JavaFX!"));
 
         StackPane root = new StackPane();
         root.getChildren().add(btn);

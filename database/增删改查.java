@@ -64,7 +64,7 @@ public class 增删改查 {
             stat = conn.createStatement();
 
             //4.执行sql语句
-            String sql = "update administer set password='123456' where username='admin'";
+            String sql = "update administer set password='5201314' where username='admin'";
             int count = stat.executeUpdate(sql);
             System.out.println("修改了" + count + "条数据");
         } catch (Exception e) {
@@ -104,9 +104,9 @@ public class 增删改查 {
         }
     }
     public static void main(String[] args) {
-        Insert();
+        //Insert();
         //Delete();
-        Update();
+        //Update();
         Select();
     }
 }

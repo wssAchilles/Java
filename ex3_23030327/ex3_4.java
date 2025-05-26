@@ -1,5 +1,12 @@
 package ex3_23030327;
-
+//23030327许子祺
+/**
+ * 猜数游戏，随机产生一个整数：
+ * a. 能够输入一个数判断其大小，若大于初始值提示"Too Large"屏幕背景为红色；
+ *    若小于初始值提示"Too Small"背景为蓝色；当等于时显示"Right,Good!"。
+ *    不等可反复重输入直到相等，相等时不可再输入。
+ * b. 设置"重置"命令按钮。
+ */
 import javafx.animation.ScaleTransition;
 import javafx.animation.TranslateTransition;
 import javafx.application.Application;
@@ -17,13 +24,7 @@ import javafx.util.Duration;
 
 import java.util.Random;
 
-/**
- * 猜数游戏，随机产生一个整数：
- * a. 能够输入一个数判断其大小，若大于初始值提示"Too Large"屏幕背景为红色；
- *    若小于初始值提示"Too Small"背景为蓝色；当等于时显示"Right,Good!"。
- *    不等可反复重输入直到相等，相等时不可再输入。
- * b. 设置"重置"命令按钮。
- */
+
 public class ex3_4 extends Application {
     private int targetNumber; // 要猜的目标数字
     private TextField inputField; // 输入框

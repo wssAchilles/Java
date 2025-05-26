@@ -28,13 +28,14 @@ public class 模拟登录 {
             conn= Config.getConn();
 
             //3.获取传输器,使用PreparedStatement防止SQL注入
+            //String sql = "select * from administer
+            // where username='" + username + "' and password='" + password + "'";
             String sql = "select * from administer where username=? and password=?";
             ps= conn.prepareStatement(sql);
             ps.setString(1, username);
             ps.setString(2, password);
 
             rs=ps.executeQuery();
-            //String sql = "select * from administer where username='" + username + "' and password='" + password + "'";
 
             //处理结果集(打印到控制台)
             if (rs.next()) {
