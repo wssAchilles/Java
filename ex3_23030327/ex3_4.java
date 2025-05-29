@@ -50,11 +50,11 @@ public class ex3_4 extends Application {
         
         resultLabel = new Label("");
         resultLabel.setMinHeight(30);
-        resultLabel.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");
+        resultLabel.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");//粗体设置
         
         // 显示当前猜测范围的标签
         rangeLabel = new Label("当前范围: 1-100");
-        rangeLabel.setStyle("-fx-font-style: italic;");
+        rangeLabel.setStyle("-fx-font-style: italic;");//斜体设置
         
         // 创建水平布局放置输入框和猜测按钮
         HBox inputBox = new HBox(10);
@@ -104,7 +104,7 @@ public class ex3_4 extends Application {
         resultLabel.setText("");
         rangeLabel.setText("当前范围: 1-100");
         scene.setFill(null); // 重置背景色
-        scene.getRoot().setStyle("-fx-background-color: white;"); // 设置默认背景色
+        scene.getRoot().setStyle("-fx-background-color: orange;"); // 设置默认背景色(橙色)
         
         // 将焦点设置到输入框
         inputField.requestFocus();

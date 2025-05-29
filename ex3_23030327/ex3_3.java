@@ -256,7 +256,7 @@ public class ex3_3 extends Application {
         doorTransition.setToY(doorTargetY);
         
         // 显示屏也跟随移动
-        TranslateTransition displayTransition = new TranslateTransition(Duration.seconds(1.5), floorDisplay);
+        TranslateTransition displayTransition = new TranslateTransition(Duration.seconds(2), floorDisplay);
         displayTransition.setToY(targetY - floorDisplay.getY() + 20); // 调整显示位置
         
         // 电梯门打开动画
@@ -326,6 +326,7 @@ public class ex3_3 extends Application {
     }
 
     public static void main(String[] args) {
+
         launch(args);
     }
 }
