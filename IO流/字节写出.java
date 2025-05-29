@@ -22,8 +22,8 @@ public class 字节写出 {
         // void write(byte[], int, int)
         out.write('x');//写出一个字节，返回int类型(x)120
         out.write(98);//写出一个int数字，返回int类型(b)98
-        byte[] arr={'x','z','q'};//写出一个字节数组
-        out.write(arr,0,3);//写出一个字节数组，返回int类型(xzq)120
+        byte[] arr={'x','z','q','1'};//写出一个字节数组
+        out.write(arr,0,4);//写出一个字节数组，返回int类型(xzq)120
 
         //3.关闭流
         out.close();
@@ -37,8 +37,8 @@ public class 字节写出 {
         //BufferedOutputStream的write方法是重写的，效率更高
         out.write('y');
         out.write(98);//写出一个字节，返回int类型(b)98
-        byte[] arr={'w','s','s'};//写出一个字节数组
-        out.write(arr,0,3);//写出一个字节数组，返回int类型(wss)119
+        byte[] arr={'w','s','s','2'};//写出一个字节数组
+        out.write(arr,0,4);//写出一个字节数组，返回int类型(wss)119
 
         //3.释放资源
         out.close();

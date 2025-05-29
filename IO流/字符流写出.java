@@ -23,7 +23,7 @@ public class 字符流写出 {
         // void write(char[], int, int)
         // void write(String)
         // void write(String, int, int)
-        out.write("许子祺",0,3);
+        out.write("许子祺666");
 
         //3.关闭流
         out.close();
@@ -36,7 +36,7 @@ public class 字符流写出 {
         //2.开始写出
         //BufferedWriter的write方法是重写的，效率更高
         char[] arr = {'魏', '铄', '苏'};//写出一个字符数组
-        out.write(arr, 0, 3);//写出一个字符数组，返回int类型(魏铄苏)119
+        out.write(arr, 0, 2);
 
         //3.释放资源
         out.close();
